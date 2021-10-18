@@ -1,19 +1,4 @@
 
-// make loop in the linked list. i.e. last node will point to the node at index=pos
-void makeLoop(Node* &root, int pos)
-{
-    // find the last node in linked list
-    Node * last = root ;
-    while (last->next != NULL) last = last->next ;
-
-    // find node at index = pos
-    Node *startingOfLoop = root ;
-    for (int i = 1 ; i < pos ; i++) startingOfLoop = startingOfLoop->next;
-
-    // point next of last to node at pos
-    last->next = startingOfLoop ;
-}
-
 // if any loop is present, this method will remove it
 void removeLoop(Node* &n)
 {
@@ -55,4 +40,20 @@ void removeLoop(Node* &n)
     slow->next = NULL ;
     cout << "Removed the loop\n" ;
 
+}
+
+
+// make loop in the linked list. i.e. last node will point to the node at index=pos
+void makeLoop(Node* &root, int pos)
+{
+    // find the last node in linked list
+    Node * last = root ;
+    while (last->next != NULL) last = last->next ;
+
+    // find node at index = pos
+    Node *startingOfLoop = root ;
+    for (int i = 1 ; i < pos ; i++) startingOfLoop = startingOfLoop->next;
+
+    // point next of last to node at pos
+    last->next = startingOfLoop ;
 }
