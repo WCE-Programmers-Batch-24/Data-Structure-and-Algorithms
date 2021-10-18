@@ -1,5 +1,5 @@
 
-// if any loop is present, this method will remove it
+// if any loop is present in Linked list, this method will remove it
 void removeLoop(Node* &n)
 {
     // if only one node present then ther's no loop
