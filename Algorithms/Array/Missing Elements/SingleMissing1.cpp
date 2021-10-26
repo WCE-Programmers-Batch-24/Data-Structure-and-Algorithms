@@ -9,7 +9,7 @@
 
 /*
   Using sum of n terms. 👇
-      Displays the sinlge missing element in the *sorted array*.
+  Displays the sinlge missing element in the *sorted array*.
 */
 void singleMissing(int A[], int size){
     int first = A[0],
