@@ -8,8 +8,8 @@
 */
 
 /*
-  Using sum of n terms. 👇
-      Displays the sinlge missing element in the *sorted array*.
+  Method 1: Using sum of n terms. 👇
+            Displays the sinlge missing element in the *sorted array*.
 */
 void singleMissing(int A[], int size){
     int first = A[0],
