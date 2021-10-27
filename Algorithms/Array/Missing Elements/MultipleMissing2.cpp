@@ -20,10 +20,8 @@ void multipleMissing2(int A[], int size){
         else if(A[i]<m) m = A[i];
     }
     
-    /*
-      Checking whether 1 is absent or not. If absent then making m = 1.
-      Use when elements are supposed to start from 1.
-    */
+    //   Checking whether 1 is absent or not. If absent then making m = 1.
+    //   Use when elements are supposed to start from 1.
     if(m!=1){
         m = 1;
     }
